@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+		[page:BufferGeometry] &rarr;
+
+		<h1>[name]</h1>
+
+		<p class="desc">[name] 를 사용하여 주어진 3D 벡터 배열에 볼록 껍질(Convex hull) 을 생성할 수 있습니다.
+						이 작업의 평균 시간 복잡도는 O(nlog(n)) 으로 간주됩니다. </p>
+
+		<h2>코드 예제</h2>
+
+		<code>const geometry = new ConvexBufferGeometry( points );
+		const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+		const mesh = new THREE.Mesh( geometry, material );
+		scene.add( mesh );
+		</code>
+
+		<h2>예제</h2>
+
+		<p>[example:webgl_geometry_convex geometry / convex ]</p>
+
+		<h2>생성자</h2>
+
+		<h3>[name]( [param:Array points] )</h3>
+		<p>
+		점들 - [page:Vector3 Vector3s] 배열에 블록 껍질(Convex hull)이 나타내는 벡터들을 포함하고 있습니다.
+		</p>
+
+
+		<h2>소스</h2>
+
+		<p>
+			[link:https://github.com/mrdoob/three.js/blob/master/examples/jsm/geometries/ConvexGeometry.js examples/jsm/geometries/ConvexGeometry.js]
+		</p>
+	</body>
+</html>
